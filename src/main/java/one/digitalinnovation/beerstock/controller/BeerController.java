@@ -37,7 +37,7 @@ public class BeerController implements BeerControllerDocs {
 
     @GetMapping("/{name}")
     public BeerDTO findByName(@PathVariable String name) throws BeerNotFoundException {
-        return beerService.findByName(name);
+            return beerService.findByName(name);
     }
 
     @GetMapping
